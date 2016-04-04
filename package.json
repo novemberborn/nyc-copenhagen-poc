@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "name": "nyc-copenhagen-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "nyc --all node run.js"
+  },
+  "keywords": [],
+  "author": "Mark Wubben (https://novemberborn.net/)",
+  "license": "ISC",
+  "nyc": {
+    "reporter": [
+      "html",
+      "lcov",
+      "text"
+    ],
+    "exclude": [
+      "coverage"
+    ]
+  },
+  "devDependencies": {
+    "nyc": "github:novemberborn/nyc#copenhagen-poc"
+  }
+}
